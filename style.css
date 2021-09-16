@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    background-color: #56baed;
+}
+
+/* Selection Box */
+.select-choice{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* hide selection */
+.select-choice.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+
+.select-choice .heading{
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.select-choice .statement{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.options{
+    display: flex;
+    width: 100%;
+}
+
+.options button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    padding:8px 0;
+    border: none;
+    outline: none;
+    background-color: #56baed;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    transform: scale(0.9);
+}
+
+.options button.choiceX{
+    margin-right: 5px;
+}
+
+.options button.choiceO{
+    margin-left: 5px;
+}
+
+/* PlayBoard */
+.playBoard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.playBoard{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+
+/* show playBoard */
+.playBoard.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: 0.5s;
+}
+
+/* hide */
+.playBoard.hide{
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.playBoard .players{
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playBoard .players span{
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-size:19px;
+    font-weight: 500;
+    cursor: default;
+    text-align: center;
+    color: #56baed;
+}
+
+.playBoard .players .active{
+    background-color: #56baed;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.playBoard section{
+    display: flex;
+}
+
+.playBoard section span{
+    display: block;
+    margin: 3px;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #56baed;
+}
+
+.play-area{
+    margin-top: 20px;
+}
+
+/* Result Box */
+.result{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.result.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: 1s;
+}
+.result.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.won p{
+    font-weight: 600;
+}
+
+.won{
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.result button{
+    width: 30%;
+    font-size: 18px;
+    font-weight: 500;
+    padding:8px 0;
+    border: none;
+    outline: none;
+    background-color: #56baed;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.result button:hover{
+    transform: scale(0.9);
+}

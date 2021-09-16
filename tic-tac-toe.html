@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <!-- Section Box -->
+    <div class="select-choice">
+        <div class="heading">Tic tac toe</div>
+        <div class="statement">
+            Select which you want to be ?
+        </div>
+        <div class="options">
+            <button class="choiceX">Player (X)</button>
+            <button class="choiceO">Player (O)</button>
+        </div>
+    </div>
+
+    <!-- PlayBoard -->
+    <div class="playBoard">
+        <div class="players">
+            <span class="xturn active">X'Turn</span>
+            <span class="oturn">O'Turn</span>
+        </div>
+        <section class="play-area">
+            <span id="box1"></span>
+            <span id="box2"></span>
+            <span id="box3"></span>
+        </section>
+        <section>
+            <span id="box4"></span>
+            <span id="box5"></span>
+            <span id="box6"></span>
+        </section>
+        <section>
+            <span id="box7"></span>
+            <span id="box8"></span>
+            <span id="box9"></span> 
+        </section>
+    </div> 
+
+    <!-- Result Board -->
+    <div class="result">
+        <div class="won">Player&nbsp; <p>X</p>&nbsp; won the game!</div>
+        <div class="btn">
+            <button class="replay">Replay</button>
+        </div>
+    </div>
+
+    <audio src="gameMusic.mp3" class="gameMusic"></audio>
+    <audio src="winMusic.mp3" class="winMusic"></audio>
+    <audio src="drawMusic.mp3" class="drawMusic"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
